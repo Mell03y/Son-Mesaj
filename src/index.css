@@ -1,0 +1,71 @@
+@import "tailwindcss";
+
+@layer base {
+  body {
+    font-family: 'Plus Jakarta Sans', system-ui, -apple-system, sans-serif;
+    background-color: #101218;
+    color: #E8E8ED;
+    overflow-x: hidden;
+  }
+
+  h1, h2, h3, .font-serif-title {
+    font-family: 'Crimson Pro', Georgia, serif;
+  }
+
+  .font-mono-code {
+    font-family: 'JetBrains Mono', monospace;
+  }
+}
+
+/* Rain animation overlay */
+.rain-container {
+  background: radial-gradient(circle at 50% 30%, rgba(201, 166, 107, 0.08) 0%, rgba(16, 18, 24, 0.95) 70%);
+}
+
+.rain-drop {
+  position: absolute;
+  background: linear-gradient(transparent, rgba(167, 173, 186, 0.4));
+  width: 1px;
+  pointer-events: none;
+  animation: fall linear infinite;
+}
+
+@keyframes fall {
+  0% {
+    transform: translateY(-50px);
+    opacity: 0;
+  }
+  30% {
+    opacity: 0.7;
+  }
+  100% {
+    transform: translateY(100vh);
+    opacity: 0.1;
+  }
+}
+
+/* Subtle CRT scanline effect */
+.scanline {
+  background: linear-gradient(rgba(18, 16, 16, 0) 50%, rgba(0, 0, 0, 0.25) 50%);
+  background-size: 100% 4px;
+}
+
+/* Custom scrollbars */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+
+::-webkit-scrollbar-track {
+  background: #101218;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #2C3240;
+  border-radius: 3px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #C9A66B;
+}
+

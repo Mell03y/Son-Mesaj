@@ -1,0 +1,6 @@
+{
+  "name": "Son Mesaj: 23.17",
+  "description": "Kuzgun Üniversitesi'nde araştırma görevlisi Deniz Arman'ın kayboluşunu aydınlattığınız Türkçe 2D dedektiflik ve kanıt çözme oyunu.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
